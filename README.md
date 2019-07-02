@@ -17,7 +17,7 @@ Results on CNN/Dailymail (25/3/2019):
 
 **Python version**: This code is in Python3.6
 
-**Package Requirements**: pytorch pytorch_pretrained_bert tensorboardX multiprocess pyrouge
+**Package Requirements**: torch pytorch_pretrained_bert tensorboardX multiprocess pyrouge
 
 Some codes are borrowed from ONMT(https://github.com/OpenNMT/OpenNMT-py)
 
@@ -34,6 +34,9 @@ unzip the zipfile and put all `.pt` files into `bert_data`
 Download and unzip the `stories` directories from [here](http://cs.nyu.edu/~kcho/DMQA/) for both CNN and Daily Mail. Put all  `.story` files in one directory (e.g. `../raw_stories`)
 
 ####  Step 2. Download Stanford CoreNLP
+
+cd src/
+
 We will need Stanford CoreNLP to tokenize the data. Download it [here](https://stanfordnlp.github.io/CoreNLP/) and unzip it. Then add the following command to your bash_profile:
 ```
 export CLASSPATH=/path/to/stanford-corenlp-full-2017-06-09/stanford-corenlp-3.8.0.jar
