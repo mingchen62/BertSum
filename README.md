@@ -29,7 +29,8 @@ download https://drive.google.com/open?id=1x0d61LP9UAN389YN00z0Pv-7jQgirVg6
 unzip the zipfile and put all `.pt` files into `bert_data`
 
 ### Option 2: process the data yourself
-
+go to src sub dir
+% cd src/
 #### Step 1 Download Stories
 Download and unzip the `stories` directories from [here](http://cs.nyu.edu/~kcho/DMQA/) for both CNN and Daily Mail. Put all  `.story` files in one directory (e.g. `../raw_stories`)
 
