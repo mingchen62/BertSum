@@ -23,8 +23,13 @@ $(document).ready(function() {
       dataType: 'json',
       contentType: 'application/json',
       data : JSON.stringify( {'src': txt, 'id': 100}),
+      beforeSend: function(){
+        // Show image container
+         $('#loader').show();
+      },
       success: function(results) {
         console.log(results);
+
         if (results.tgt.length > 0) {
           $('#try-again').show();
           h='<span style="font-weight:bold">Summary: </span>'
@@ -37,6 +42,10 @@ $(document).ready(function() {
       },
       error: function(error) {
         console.log(error)
+      },
+       complete:function(data){
+       // Hide image container
+       $("#loader").hide();
       }
     });
 
